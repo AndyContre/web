@@ -1,0 +1,182 @@
+/* === ESTRUCTURA GENERAL === */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #f5f5f5;
+}
+
+header {
+  background-image: url("img/ban1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 2px solid #B0B0B0;
+  color: #f5f5f5;
+}
+
+footer {
+  background-color: #222;
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #B0B0B0;
+}
+
+/* === TIPOGRAFÍA === */
+h1 {
+  font-size: 48px;
+  color: #B0B0B0;
+  margin-bottom: 5px;
+  text-shadow: 0 0 20px red;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  color: #ccc;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  color: #B0B0B0;
+  margin-bottom: 10px;
+  text-shadow: 0 0 20px red;
+  text-align: center;
+}
+
+/* === NAVEGACIÓN === */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: #B0B0B0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: red;
+}
+
+/* === GALERÍA === */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.galeria figure {
+  margin: 0;
+  text-align: center;
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid red;
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+.galeria figcaption {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+/* === MULTIMEDIA === */
+.videos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.videos figure {
+  margin: 0;
+  text-align: center;
+}
+
+.videos video,
+.videos iframe {
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid red;
+  transition: transform 0.3s ease;
+}
+
+.videos video:hover,
+.videos iframe:hover {
+  transform: scale(1.05);
+}
+
+.videos figcaption {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+/* === LOGO === */
+.logo {
+  display: block;
+  margin: 0 auto 15px auto;
+  width: 200px;
+  height: auto;
+}
+
+/* === IMAGEN DE PORTADA DE LADO A LADO === */
+.portada-full {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* === CONTENIDO PRINCIPAL === */
+main section {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+main ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+main ul li {
+  margin: 5px 0;
+}
+
+/* === CENTRADO DE TEXTOS EN TODAS LAS SECCIONES === */
+section {
+  text-align: center;
+}
+
+section p {
+  max-width: 900px;
+  margin: 40px auto;
+  font-size: 18px;
+  color: #ccc;
+}
